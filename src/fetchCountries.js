@@ -26,8 +26,9 @@ export default function fetchCountries(searchQuery){
           "Country not found",
           delay: 2000
       })
+    }else {
+      return res.json()
     }
-    return res.json()
   })
   .then(countriesList=>{
     console.log(countriesList)
